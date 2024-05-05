@@ -27,7 +27,7 @@ public class ProductOrderService {
      */
     public ProductDetails getProductDetails() {
        List<Product> productList=  productRepository.findAll();
-       log.debug("List of product" , productList.size());
+       log.debug("List of product" , productList);
        return ProductDetails.builder().products(productList).build();
     }
 

@@ -26,7 +26,7 @@ public class MockDataProvider {
                 .productName("Tomatto")
                 .productPrice(1.1)
                 .productQuantity(2L).build();
-        return ProductDetails.builder().productDetails(Collections.singletonList(prduct)).build();
+        return ProductDetails.builder().products(Collections.singletonList(prduct)).build();
 
     }
 
