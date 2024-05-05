@@ -1,0 +1,267 @@
+
+
+/* Styling for product cards */
+.product-wrapper {
+    margin-bottom: 20px; /* Add some space between product cards */
+    border: 1px solid #ddd; /* Add a border around the product cards */
+    border-radius: 5px; /* Add rounded corners to the product cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect to the product cards */
+    background-color: #fff; /* Set background color for product cards */
+    transition: box-shadow 0.3s ease; /* Add smooth transition for shadow effect */
+}
+
+.product-wrapper:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increase shadow on hover */
+}
+
+.product-img {
+    overflow: hidden; /* Ensure product images don't overflow their containers */
+}
+
+.product-img img {
+    width: 100%; /* Make product images fill their containers */
+    display: block; /* Ensure proper spacing for images */
+}
+
+.product-description {
+    padding: 10px; /* Add padding for product descriptions */
+}
+
+.product-details {
+    font-weight: bold; /* Make product details bold */
+}
+
+.price-cut {
+    color: #999; /* Set color for original price */
+     /* Add strike-through effect for original price */
+}
+
+.price {
+    margin-top: 10px; /* Add spacing between product details and price */
+}
+
+/*.weight-prd select {
+    width: 50px; /* Make weight dropdowns fill their containers
+}*/
+
+.quantity-prd {
+    display: flex; /* Use flexbox for quantity inputs */
+    align-items: center; /* Align quantity inputs vertically */
+    margin-top: 10px; /* Add spacing between product details and quantity inputs */
+}
+
+.value-button {
+    cursor: pointer; /* Change cursor to pointer for increase/decrease buttons */
+    padding: 5px; /* Add padding for increase/decrease buttons */
+    background-color: #f5f5f5; /* Set background color for increase/decrease buttons */
+    border: 1px solid #ccc; /* Add border for increase/decrease buttons */
+    border-radius: 3px; /* Add rounded corners for increase/decrease buttons */
+    margin: 0 5px; /* Add spacing between increase/decrease buttons */
+}
+
+.value-textbox {
+    width: 40px; /* Set width for quantity input fields */
+    text-align: center; /* Center-align text in quantity input fields */
+    border: 1px solid #ccc; /* Add border for quantity input fields */
+    border-radius: 3px; /* Add rounded corners for quantity input fields */
+}
+
+.addCard {
+    margin-top: 10px; /* Add spacing between quantity inputs and add-to-cart buttons */
+}
+
+.add-to-cart {
+    cursor: pointer; /* Change cursor to pointer for add-to-cart buttons */
+    padding: 5px 10px; /* Add padding for add-to-cart buttons */
+    background-color:#6bba62 ; /* Set background color for add-to-cart buttons */
+    color: #fff; /* Set text color for add-to-cart buttons */
+    border: none; /* Remove border from add-to-cart buttons */
+    border-radius: 3px; /* Add rounded corners for add-to-cart buttons */
+    transition: background-color 0.3s ease; /* Add smooth transition for background color */
+    background-color:green;
+}
+
+.add-to-cart:hover {
+    background-color: #6bba62; /* Darken background color on hover */
+}
+.check{
+background-color:green;
+ border: none;
+    border-radius:3px;
+    padding: 10px 10px;
+    color: #fff;
+
+}
+
+
+/* Responsive styling */
+@media screen and (max-width: 767px) {
+    .product-wrapper {
+        width: 100%; /* Make product cards occupy full width on mobile */
+    }
+
+    .quantity-prd {
+        flex-direction: column; /* Stack quantity inputs vertically on mobile */
+        align-items: flex-start; /* Align quantity inputs to the start (left) on mobile */
+    }
+}
+.nav{
+display:flex
+background-color:green;
+align-items: center;
+    justify-content: flex-start;
+    color:white;
+
+
+}
+.navbar-brand {
+    display: flex;
+    height: 44px;
+    align-items: center;
+    justify-content: flex-start;
+    color: white; /* Change text color */
+    text-decoration: none;
+    background-color:green;
+    border:none;
+    border-radius: 3px; /* Add rounded corners for add-to-cart buttons */
+    transition: background-color 0.3s ease; /* Add smooth transition for background color */
+
+}
+.container-fluid{
+display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    background-color:green;
+
+}
+.navbar-brand:hover{
+ background-color:orange;
+}
+
+
+.order-detail {
+    background-color: #f9f9f9; /* Background color */
+    padding: 20px; /* Padding around the content */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+
+.order-detail h2 {
+    color: #333; /* Title color */
+    font-size: 24px; /* Title font size */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+#product-list {
+    font-size: 16px; /* Font size for the product list */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+#cart-items-discount {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+#cart-items-discount li {
+    margin-bottom: 5px; /* Bottom margin for each item */
+}
+
+#total-price {
+    font-weight: bold; /* Bold font for total price */
+    font-size: 18px; /* Font size for total price */
+}
+
+.cart-items{
+    float: right;
+    margin-top: -44px;
+}
+
+
+/* body {
+  font-family: Arial, sans-serif;
+  background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}*/
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.go-back{
+background-color: green;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 10px;
+    color: #fff;
+}

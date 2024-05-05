@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fresh Express</title>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/css/home.css">
+</head>
+
+<body>
+<div class="nav" style="font-size:30px">
+
+    <nav style="background-color:green">
+        <div class="container-fluid">
+            Fresh Express
+        </div>
+        <div class="cart-items">
+            <a class="button" href="#popup1">
+                <button class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart"
+                         style="height:30px; width:30px; color:white" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>
+
+                    <div id="cart-count"></div>
+                </button>
+            </a>
+        </div>
+
+    </nav>
+
+</div>
+
+<div class="container">
+    <div class="checkout-button" style="float: right;padding: 19px">
+        <button class="check" id="checkout-btn">CheckOut Product</button>
+    </div>
+    <div class="starter-template">
+        <h1>Welcome to Fresh Express</h1>
+    </div>
+
+    <!-----<form class="form-horizontal">
+         Form content can be added here if needed
+    </form>------>
+
+    <div class="fresh-section">
+        <div class="row g-5" id="vegi">
+            <!-- Content for vegetable products will be dynamically added here -->
+        </div>
+
+        <div class="row g-5" id="drink">
+            <!-- Content for drink products will be dynamically added here -->
+        </div>
+
+        <div class="row g-5" id="bread">
+            <!-- Content for bread products will be dynamically added here -->
+        </div>
+    </div>
+
+
+    <div class="order-detail">
+        <h2>Order Prices Details:</h2>
+        <span id="product-list"></span>
+        <ul id="cart-items-discount">
+        </ul>
+        <div id="total-price"></div>
+        <div>
+            <button class="go-back">Back to Product</button>
+        </div>
+    </div>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="cart-section">
+                <h2>Shopping Cart</h2>
+                <ul id="cart-items">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="webjars/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
